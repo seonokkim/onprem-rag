@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Trading Chatbot</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .chat-container {
+            height: calc(100vh - 200px);
+        }
+        .message {
+            max-width: 80%;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .user-message {
+            background-color: #e3f2fd;
+            margin-left: auto;
+        }
+        .bot-message {
+            background-color: #f5f5f5;
+            margin-right: auto;
+        }
+        /* Style for bold text within messages */
+        .message strong {
+            font-weight: bold;
+        }
+        .message .collapsible-title {
+            font-weight: normal; /* Ensure collapsible titles are not bold */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">Stock Trading FAQ Chat</h1>
+        
+        <div class="bg-white rounded-lg shadow-lg p-4">
+            <div id="chat-messages" class="chat-container overflow-y-auto mb-4">
+                <div class="message bot-message">
+                    <strong>Hello! I'm your Stock Trading FAQ assistant. How can I help you today?</strong>
+                </div>
+            </div>
+            
+            <div class="flex gap-2">
+                <input type="text" id="user-input" 
+                       class="flex-1 p-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                       placeholder="Type your question here...">
+                <button onclick="sendMessage()" 
+                        class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                    Send
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const chatMessages = document.getElementById('chat-messages');
+        const userInput = document.getElementById('user-input');
+
+        // Handle Enter key
+        userInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        async function sendMessage() {
+            const message = userInput.value.trim();
+            if (!message) return;
+
+            // Add user message to chat - make it bold
+            addMessage(`<strong>${escapeHtml(message)}</strong>`, 'user');
+            userInput.value = '';
+
+            try {
+                // Show loading message and get its element
+                const loadingMessageElement = addMessage('Thinking...', 'bot');
+
+                // Send request to backend
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ query: message })
+                });
+
+                const data = await response.json();
+
+                // Update the loading message element with the actual answer and collapsible sections
+                loadingMessageElement.innerHTML = ''; // Clear 'Thinking...' text
+
+                // Add bold answer
+                const answerElement = document.createElement('strong');
+                answerElement.textContent = data.answer;
+                loadingMessageElement.appendChild(answerElement);
+
+                // Add thought process if available below the answer in the same message block
+                if (data.thought_process && data.thought_process.length > 0) {
+                    const thoughtsTitle = document.createElement('div');
+                    thoughtsTitle.className = 'collapsible-title'; // Add class for styling
+                    thoughtsTitle.style.marginTop = '10px';
+                    thoughtsTitle.style.cursor = 'pointer';
+                    thoughtsTitle.style.display = 'flex'; // Use flexbox to align indicator and text
+                    thoughtsTitle.style.alignItems = 'center'; // Center items vertically
+
+                    const thoughtsIndicator = document.createElement('span');
+                    thoughtsIndicator.textContent = '[+]'; // Initial state: collapsed
+                    thoughtsIndicator.style.marginRight = '5px';
+                    thoughtsIndicator.style.minWidth = '15px'; // Prevent text reflow
+
+                    const thoughtsText = document.createElement('span');
+                    thoughtsText.textContent = 'Thought Process';
+
+                    const thoughtsContent = document.createElement('div');
+                    thoughtsContent.style.display = 'none'; // Initially hidden
+                    thoughtsContent.style.whiteSpace = 'pre-wrap'; // Preserve line breaks
+                    thoughtsContent.textContent = data.thought_process.join('\n');
+                    thoughtsContent.style.marginTop = '5px'; // Add some space below title
+
+                    thoughtsTitle.onclick = function() {
+                        const isHidden = thoughtsContent.style.display === 'none';
+                        thoughtsContent.style.display = isHidden ? 'block' : 'none';
+                        thoughtsIndicator.textContent = isHidden ? '[-]' : '[+]';
+                    };
+
+                    thoughtsTitle.appendChild(thoughtsIndicator);
+                    thoughtsTitle.appendChild(thoughtsText);
+                    loadingMessageElement.appendChild(thoughtsTitle);
+                    loadingMessageElement.appendChild(thoughtsContent);
+                }
+
+                // Display search results below thought process
+                if (data.results && data.results.length > 0) {
+                    const resultsTitle = document.createElement('div');
+                    resultsTitle.className = 'collapsible-title'; // Add class for styling
+                    resultsTitle.style.marginTop = '10px';
+                    resultsTitle.style.cursor = 'pointer';
+                    resultsTitle.style.display = 'flex'; // Use flexbox
+                    resultsTitle.style.alignItems = 'center'; // Center items
+
+                    const resultsIndicator = document.createElement('span');
+                    resultsIndicator.textContent = '[+]'; // Initial state: collapsed
+                    resultsIndicator.style.marginRight = '5px';
+                     resultsIndicator.style.minWidth = '15px'; // Prevent text reflow
+
+                    const resultsText = document.createElement('span');
+                    resultsText.textContent = 'Search Results';
+
+                    const resultsContent = document.createElement('div');
+                    resultsContent.style.display = 'none'; // Initially hidden
+                    resultsContent.innerHTML = formatSearchResults(data.results); // Use innerHTML for formatted results
+                    resultsContent.style.marginTop = '5px'; // Add some space below title
+
+                     resultsTitle.onclick = function() {
+                        const isHidden = resultsContent.style.display === 'none';
+                        resultsContent.style.display = isHidden ? 'block' : 'none';
+                        resultsIndicator.textContent = isHidden ? '[-]' : '[+]';
+                    };
+
+                    resultsTitle.appendChild(resultsIndicator);
+                    resultsTitle.appendChild(resultsText);
+                    loadingMessageElement.appendChild(resultsTitle);
+                    loadingMessageElement.appendChild(resultsContent);
+                }
+
+            } catch (error) {
+                console.error('Error:', error);
+                // If an error occurs, update the loading message with an error message
+                loadingMessageElement.innerHTML = '<strong>Sorry, something went wrong. Please try again.</strong>';
+            }
+        }
+
+        function addMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+            // Use innerHTML to allow injecting <strong> tags
+            messageDiv.innerHTML = text;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            return messageDiv;
+        }
+
+        // Helper function to format search results for display
+        function formatSearchResults(results) {
+            let html = '';
+            results.forEach((result, index) => {
+                html += `
+                    <strong>Result ${index + 1}:</strong><br>
+                    Content: ${escapeHtml(result.content)}<br>
+                    Category: ${escapeHtml(result.metadata.category || 'N/A')}<br>
+                    Distance: ${result.similarity.toFixed(2)}<br><br>
+                `;
+            });
+            return html;
+        }
+
+        // Helper function to escape HTML characters to prevent XSS (simple version)
+        function escapeHtml(unsafe) {
+            return unsafe
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/\"/g, "&quot;")
+                .replace(/\'/g, "&#039;");
+        }
+    </script>
+</body>
+</html> 

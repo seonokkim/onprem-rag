@@ -1,0 +1,12 @@
+pandas
+psycopg2-binary
+python-dotenv
+timescale-vector
+instructor
+anthropic
+streamlit
+fastapi
+uvicorn
+python-multipart
+jinja2
+aiofiles

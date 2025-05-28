@@ -1,0 +1,103 @@
+question;answer;category
+What is a stock?;A stock represents ownership shares in a company. When you buy stock, you become a partial owner of that business.;Trading Concepts
+How do I start investing in stocks?;Open a brokerage account, fund it with money, research companies, and place your first buy order through the platform.;Order Types
+What is the difference between stocks and bonds?;Stocks represent ownership in companies with potential for growth, while bonds are loans to companies or governments with fixed interest payments.;Trading Concepts
+What is a dividend?;A dividend is a payment made by companies to shareholders, typically quarterly, as a way to share profits.;Trading Concepts
+How do I choose which stocks to buy?;Research company fundamentals, analyze financial statements, consider industry trends, and evaluate your risk tolerance.;Trading Strategies
+What is market capitalization?;Market cap is the total value of a company's shares, calculated by multiplying share price by the number of outstanding shares.;Trading Concepts
+What are the trading hours for the stock market?;The US stock market is open Monday-Friday from 9:30 AM to 4:00 PM Eastern Time, excluding holidays.;Order Types
+What is a bull market vs bear market?;A bull market is when stock prices are rising or expected to rise, while a bear market is when prices are falling or expected to fall.;Market Indicators
+How much money do I need to start investing?;You can start investing with as little as $1-5 with many modern brokers, though $100-1000 gives you more options.;Order Types
+What is the difference between market orders and limit orders?;Market orders execute immediately at current price, while limit orders only execute when the stock reaches your specified price.;Order Types
+What are trading fees and commissions?;These are costs charged by brokers for executing trades. Many brokers now offer commission-free stock trading.;Brokerage Accounts
+What is diversification and why is it important?;Diversification means spreading investments across different stocks and sectors to reduce risk from any single investment.;Trading Strategies
+What is a stock split?;A stock split increases the number of shares while proportionally decreasing the price, making shares more affordable without changing total value.;Trading Strategies
+What is the price-to-earnings (P/E) ratio?;P/E ratio compares a company's stock price to its earnings per share, helping evaluate if a stock is overvalued or undervalued.;Fundamental Analysis
+How do I read a stock chart?;Stock charts show price movements over time, with tools like moving averages, volume, and technical indicators to analyze trends.;Technical Analysis
+What is dollar-cost averaging?;Dollar-cost averaging involves investing a fixed amount regularly regardless of stock price, reducing the impact of market volatility.;Trading Strategies
+What are growth stocks vs value stocks?;Growth stocks are expected to grow faster than average, while value stocks appear underpriced relative to their fundamentals.;Trading Strategies
+What is a stock exchange?;A stock exchange is a marketplace where stocks are bought and sold, such as the NYSE or NASDAQ.;Trading Concepts
+How do taxes work on stock investments?;You pay capital gains tax on profits when you sell stocks, with different rates for short-term (under 1 year) vs long-term holdings.;Trading Basics
+What is volatility in the stock market?;Volatility measures how much stock prices fluctuate. High volatility means larger price swings up and down.;Risk Management
+What are blue-chip stocks?;Blue-chip stocks are shares of large, established, financially stable companies with a history of reliable performance.;Trading Strategies
+What is a portfolio?;A portfolio is your collection of investments, including stocks, bonds, and other assets you own.;Trading Concepts
+How do I research a company before investing?;Review financial statements, annual reports, news, analyst ratings, competitive position, and industry outlook.;Fundamental Analysis
+What is insider trading and why is it illegal?;Insider trading is buying or selling stocks based on non-public information, which is illegal because it's unfair to other investors.;Risk Management
+What are penny stocks?;Penny stocks are low-priced stocks (typically under $5) of small companies, often considered high-risk investments.;Trading Strategies
+What is short selling?;Short selling involves borrowing shares to sell them, hoping to buy them back later at a lower price to profit from price declines.;Advanced Trading
+What are stock options?;Stock options are contracts giving you the right to buy or sell a stock at a specific price within a certain timeframe.;Derivatives
+What is an IPO (Initial Public Offering)?;An IPO is when a private company first sells shares to the public, becoming a publicly-traded company.;Trading Strategies
+What are earnings reports?;Earnings reports are quarterly financial statements companies release showing revenue, profits, and other key financial metrics.;Company Analysis
+What is the role of a stockbroker?;A stockbroker is a licensed professional or firm that executes buy and sell orders for investors in exchange for fees or commissions.;Industry Basics
+What are index funds vs individual stocks?;Index funds hold many stocks to track a market index, while individual stocks represent ownership in single companies.;Investment Options
+What is market manipulation?;Market manipulation involves artificially inflating or deflating stock prices through misleading practices, which is illegal.;Risk Management
+How do company mergers affect stock prices?;Mergers typically increase the target company's stock price and may decrease the acquiring company's price due to premium paid.;Trading Strategies
+What is day trading?;Day trading involves buying and selling stocks within the same trading day to profit from short-term price movements.;Trading Strategies
+What are after-hours trading and pre-market trading?;These allow trading outside regular market hours, typically with lower volume and potentially higher volatility.;Order Types
+What is a stock ticker symbol?;A ticker symbol is a unique abbreviation (like AAPL for Apple) used to identify publicly traded companies.;Trading Concepts
+What are moving averages in stock analysis?;Moving averages smooth out price data over time periods to help identify trends and potential buy/sell signals.;Technical Analysis
+What is fundamental analysis?;Fundamental analysis evaluates a company's financial health, business model, and growth prospects to determine stock value.;Analysis Methods
+What is technical analysis?;Technical analysis uses historical price and volume data, charts, and patterns to predict future stock price movements.;Analysis Methods
+What are support and resistance levels?;Support is a price level where stocks tend to stop falling, while resistance is where they tend to stop rising.;Technical Analysis
+What is a stock's 52-week high and low?;These represent the highest and lowest prices a stock has traded at during the past 52 weeks.;Price Metrics
+What are stock sectors and why do they matter?;Stock sectors group companies by industry (technology, healthcare, etc.), helping investors diversify and understand market trends.;Market Structure
+What is a recession's impact on stocks?;Recessions typically cause stock prices to decline as economic activity slows and corporate earnings decrease.;Economic Impact
+What are dividend yield and dividend growth?;Dividend yield is annual dividends divided by stock price, dividend growth tracks how much companies increase dividend payments over time.;Dividend Investing
+What is a stock buyback?;A stock buyback is when a company repurchases its own shares from the marketplace, potentially increasing remaining shares' value.;Trading Strategies
+What are quarterly earnings and guidance?;Quarterly earnings show company performance every three months, guidance is management's forecast for future performance.;Company Analysis
+What is the difference between common and preferred stock?;Common stock gives voting rights and variable dividends, preferred stock typically offers fixed dividends but limited voting rights.;Stock Types
+What are growth and income investing strategies?;Growth investing focuses on companies expected to grow rapidly, income investing targets stocks that pay regular dividends.;Trading Strategies
+What is risk tolerance in investing?;Risk tolerance is your ability and willingness to lose money in exchange for potential investment gains.;Risk Management
+What are large-cap, mid-cap, and small-cap stocks?;These categories classify stocks by company size: large-cap (over $10B), mid-cap ($2-10B), and small-cap (under $2B).;Trading Strategies
+What is asset allocation?;Asset allocation is how you divide investments among different asset classes like stocks, bonds, and cash based on goals and risk tolerance.;Portfolio Management
+What are stop-loss orders?;Stop-loss orders automatically sell your stock when it falls to a predetermined price, limiting potential losses.;Risk Management
+What is the efficient market hypothesis?;This theory suggests stock prices always reflect all available information, making it difficult to consistently beat the market.;Market Theory
+What are analyst ratings and price targets?;Analysts provide buy/sell recommendations and price targets based on their research and valuation models for stocks.;Research Tools
+What is earnings per share (EPS)?;EPS is a company's profit divided by outstanding shares, indicating how much profit each share represents.;Financial Metrics
+What are stock market indices like the S&P 500?;Market indices track the performance of selected stocks to represent overall market or sector performance.;Market Benchmarks
+What is rebalancing a portfolio?;Rebalancing involves adjusting your portfolio periodically to maintain desired asset allocation as investments grow or decline.;Portfolio Management
+What are emerging markets vs developed markets?;Developed markets are established economies with mature financial systems. Emerging markets are developing economies with higher growth potential but more risk.;Global Investing
+What is currency risk in international investing?;Currency risk is the potential for losses when foreign investments lose value due to unfavorable exchange rate movements.;International Risk
+What are ADRs (American Depositary Receipts)?;ADRs allow US investors to buy shares of foreign companies that trade on US exchanges in US dollars.;International Investing
+What are stock screeners?;Stock screeners are tools that filter stocks based on specific criteria like price, market cap, P/E ratio, or dividend yield.;Research Tools
+What is the difference between value and growth investing?;Value investing seeks underpriced stocks trading below intrinsic value, growth investing targets companies with above-average growth potential.;Investment Philosophy
+What are REITs (Real Estate Investment Trusts)?;REITs are companies that own income-producing real estate and are required to distribute most profits as dividends to shareholders.;Investment Types
+What is compound interest and how does it apply to stocks?;Compound interest is earning returns on both your initial investment and previously earned returns, accelerating wealth growth over time.;Wealth Building
+What are wash sale rules?;Wash sale rules prevent claiming tax losses if you buy the same or substantially identical stock within 30 days of selling at a loss.;Tax Rules
+What is a margin account?;A margin account allows you to borrow money from your broker to buy stocks, using your existing investments as collateral.;Account Types
+What are the risks of margin trading?;Margin trading amplifies both gains and losses, and you can lose more than your initial investment if trades go against you.;Advanced Risk
+What are circuit breakers in stock trading?;Circuit breakers are automatic trading halts triggered by large market declines to prevent panic selling and allow cooling-off periods.;Market Safety
+What is high-frequency trading?;High-frequency trading uses computer algorithms to execute thousands of trades per second, often criticized for creating unfair advantages.;Market Structure
+What are stock buyback programs?;Companies announce plans to repurchase shares over time, potentially supporting stock price and returning cash to shareholders.;Trading Strategies
+What is earnings season?;Earnings season occurs quarterly when most public companies report financial results, typically causing increased market volatility.;Market Cycles
+What are penny stock risks?;Penny stocks often lack liquidity, have limited financial information, face higher volatility, and are susceptible to manipulation.;High-Risk Investing
+What is a tender offer?;A tender offer is when someone offers to buy shareholders' stock at a specific price, often during takeover attempts.;Trading Strategies
+What are stock warrants?;Stock warrants give holders the right to buy company stock at a fixed price for a specified period, similar to options but longer-term.;Derivatives
+What is the difference between NYSE and NASDAQ?;NYSE is an auction-based exchange with physical trading floor. NASDAQ is fully electronic with market makers facilitating trades.;Stock Exchanges
+What are Level II quotes?;Level II quotes show the order book with bid and ask prices from different market makers, providing deeper market insight.;Trading Tools
+What is extended hours trading?;Extended hours trading allows buying and selling stocks before market open and after market close, typically with different risks and liquidity.;Trading Options
+What are good till canceled (GTC) orders?;GTC orders remain active until executed or manually canceled, unlike day orders that expire at market close.;Order Types
+What is slippage in trading?;Slippage is the difference between expected trade price and actual execution price, often occurring with large orders or volatile markets.;Trading Concepts
+What are dark pools?;Dark pools are private exchanges allowing large investors to trade without revealing their intentions to the broader market.;Market Structure
+What is algorithmic trading?;Algorithmic trading uses computer programs to automatically execute trades based on predetermined criteria and market conditions.;Advanced Trading
+What are stock splits vs stock dividends?;Stock splits increase share count while reducing price proportionally. Stock dividends distribute additional shares as payment to shareholders.;Trading Strategies
+What is the ex-dividend date?;The ex-dividend date is when a stock begins trading without dividend rights. You must own shares before this date to receive the dividend.;Dividend Details
+What are covered calls?;Covered calls involve selling call options on stocks you own, generating income but potentially limiting upside gains.;Options Strategy
+What is position sizing?;Position sizing determines how much money to invest in each stock based on risk tolerance and portfolio management principles.;Risk Management
+What are momentum stocks?;Momentum stocks have strong recent price performance and are expected to continue moving in the same direction based on technical analysis.;Trading Strategy
+What is the January effect?;The January effect is a theory that stock prices, especially small-caps, tend to rise in January due to year-end tax selling and new year buying.;Market Anomalies
+What are proxy statements and voting?;Proxy statements provide information for shareholder votes on company matters. Shareholders can vote on directors, mergers, and other corporate issues.;Shareholder Rights
+What is stock dilution?;Stock dilution occurs when companies issue new shares, reducing existing shareholders' ownership percentage and potentially the stock price.;Corporate Finance
+What are special dividends?;Special dividends are one-time payments companies make to shareholders, typically when they have excess cash or sell assets.;Dividend Types
+What is the difference between book value and market value?;Book value is company assets minus liabilities on financial statements. Market value is the current stock price times outstanding shares.;Fundamental Analysis Concepts
+What are cyclical vs defensive stocks?;Cyclical stocks perform well during economic growth but poorly in downturns. Defensive stocks remain stable regardless of economic conditions.;Trading Strategies
+What is sector rotation?;Sector rotation is an investment strategy of moving money between different industry sectors based on economic cycles and market conditions.;Trading Strategies
+What are stock options for employees?;Employee stock options give workers the right to buy company shares at a fixed price, typically used as compensation and retention tools.;Employee Benefits
+What is insider information and how is it regulated?;Insider information is material, non-public information about companies. Trading on such information is illegal and monitored by regulators.;Legal Regulations
+What are whisper numbers in earnings?;Whisper numbers are unofficial earnings expectations that often differ from official analyst estimates, sometimes moving stock prices.;Earnings Analysis
+What is the role of market makers?;Market makers provide liquidity by continuously buying and selling stocks, profiting from bid-ask spreads while facilitating smooth trading.;Market Function
+What are American vs European style options?;American options can be exercised anytime before expiration. European options can only be exercised on the expiration date.;Options Details
+What is volatility trading?;Volatility trading involves strategies that profit from changes in implied volatility rather than stock price direction, often using options.;Advanced Strategy
+What are spinoffs and how do they affect shareholders?;Spinoffs create new independent companies from parts of existing companies, with shareholders typically receiving shares in both entities.;Trading Strategies
+What is the difference between systematic and unsystematic risk?;Systematic risk affects the entire market and cannot be diversified away. Unsystematic risk is company-specific and can be reduced through diversification.;Risk Types
+What are depositary receipts for foreign stocks?;Depositary receipts represent foreign company shares held by banks, allowing easier trading of international stocks on domestic exchanges.;International Access
